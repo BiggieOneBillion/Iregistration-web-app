@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Table Container */
+table {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; /* Removes additional spacing between rows */
+  color: #333;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+/* Table Headers */
+table th {
+  text-align: left;
+  padding: 12px 15px;
+  background-color: #f4f4f4;
+  color: #555;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Odd Rows */
+table tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+  transition: background-color 0.2s ease;
+}
+
+/* Even Rows */
+table tr:nth-child(even) {
+  background-color: #f8f8f8; /* Light gray background for even rows */
+  transition: background-color 0.2s ease;
+}
+
+/* Hover Effect for Rows */
+table tr:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+}
+
+/* Table Cells */
+table td {
+  padding: 15px;
+  border-top: 1px solid #e6e6e6;
+}
+
+/* First and Last Cells with Rounded Corners */
+/* table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+} */
+
+/* Responsive Adjustment */
+@media (max-width: 600px) {
+  table, tr, th, td {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    color: black;
+  }
+}
